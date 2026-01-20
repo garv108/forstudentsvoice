@@ -1,0 +1,144 @@
+👤 Role & Goal
+You are an expert front-end developer using React, TypeScript, and Tailwind CSS. Your task is to build a modern, inspiring, and conversion-focused single-page landing page for a SaaS platform named StudentVoice.
+
+🎯 Core Concept
+StudentVoice is a "Proactive Student Feedback System" sold directly to colleges and universities. It is NOT a public complaint board. It is a professional tool that gives administrators a real-time dashboard to understand student concerns, improve campus life, and prevent small issues from escalating. The tone is empowering, professional, and solutions-oriented.
+
+🎨 Design & UX Requirements
+
+Color Palette: Use a professional, trustworthy palette. Primary color: deep blue (#2563eb). Neutral backgrounds (off-whites, light grays #f9fafb). Accents: supportive green (#10b981) for positive actions, cautious amber (#f59e0b) for highlights. Avoid pure black, stark white, or overly bright neon colors.
+
+Typography: Use clean, modern fonts (Inter or system font stack). Clear hierarchy with ample whitespace.
+
+3D/Interactive Elements: Integrate 2-3 subtle, lightweight 3D elements to add sophistication without slowing the page. Examples:
+
+A floating, slowly rotating 3D dashboard icon in the hero section (like a data visualization).
+
+Tilt-effect or gentle floating animation on key feature cards.
+
+A 3D pie chart or graph element in the data section that morphs on scroll.
+
+Layout: Single-page scroll with clear sections. It must feel premium.
+
+📝 Page Sections & Content Flow
+Create these sections in order:
+
+Sticky Navigation Bar
+
+Logo: StudentVoice (bold, primary color).
+
+Menu: Home, Features, How It Works, FAQ.
+
+Two buttons: Sign In (outline), Get Started (solid, primary). The Sign In button links directly to: https://students-voice-bay.vercel.app/login. Get Started scrolls to the CTA.
+
+Hero Section
+
+Headline: Transform Student Feedback into Actionable Insight.
+
+Sub-headline: StudentVoice gives your institution a real-time dashboard to understand campus sentiment, address concerns proactively, and build a better student experience.
+
+Primary Button: Schedule a Demo (links to CTA).
+
+Secondary Button: View Features (scrolls to Features).
+
+Visual: Include the 3D floating dashboard icon.
+
+Value Proposition (3-column)
+
+Title: Why StudentVoice?
+
+Three cards with icons (use tilt/hover effect):
+
+For Administrators: Gain a clear, real-time view of campus climate and student needs.
+
+For Department Heads: Identify trends and pain points specific to your faculty or cohort.
+
+For Students: A trusted, structured channel to be heard, leading to tangible improvements.
+
+Features Section
+
+Title: Powerful Features for Modern Institutions
+
+2x2 grid:
+
+Real-Time Dashboard: Monitor feedback trends as they happen.
+
+Anonymous & Safe Reporting: Secure, anonymized channels for confident feedback.
+
+Smart Analytics: AI-powered insights categorize and prioritize issues.
+
+Actionable Reports: Generate detailed reports for stakeholders with one click.
+
+Include a small, non-intrusive 3D graph graphic in the background.
+
+How It Works (3 Steps)
+
+Simple, numbered steps:
+
+Students Submit: Feedback via a simple, accessible web portal.
+
+You Analyze: Issues are categorized on your private dashboard.
+
+Campus Improves: Make data-driven decisions to enhance student life.
+
+Social Proof
+
+Quote: "StudentVoice helped us identify a recurring facilities issue we had missed. Resolving it increased our student satisfaction score by 30%."
+
+Attribution: – Dr. Sarah Chen, Dean of Students at Northern Atlantic University.
+
+Pricing / CTA Section
+
+Headline: Ready to Foster a Happier Campus?
+
+Body: Connect with our team to discuss a tailored plan. Start with a free pilot.
+
+Simple contact form: Name, Work Email, Institution Name.
+
+Button: Request a Demo.
+
+Crucial: Below the form: Already have an account? with a Sign In link to https://students-voice-bay.vercel.app/login.
+
+FAQ (Collapsible)
+
+3 questions:
+
+How is student privacy protected?
+
+Can we customize the feedback categories?
+
+What does implementation look like?
+
+Footer
+
+Logo and links.
+
+© 2024 StudentVoice. All rights reserved.
+
+Line: A tool for institutions, by builders who care about education.
+
+⚙️ Technical Implementation Requirements
+
+Framework: Next.js 14 (App Router) with TypeScript.
+
+Styling: Tailwind CSS for all styling. No Sass or CSS modules.
+
+3D Elements: Use @react-three/fiber and @react-three/drei for 3D. Optimize and lazy-load.
+
+Interactivity: Use framer-motion for animations and card tilt.
+
+Form: Simple onSubmit handler that console.log data. No backend.
+
+Deployment Ready: Code must be standalone. Do not use Replit-specific packages. Use standard npm imports.
+
+🔗 Critical Integration Note
+This is a static marketing site. Its sole purpose is to generate demo leads and funnel users to the main application.
+
+The Sign In buttons (Navbar and CTA section) must link directly to https://students-voice-bay.vercel.app/login.
+
+The Get Started button scrolls to the demo form.
+
+DO NOT implement authentication (Clerk) or app logic here.
+
+🚫 Final Command
+Do not write placeholder code or pseudocode. Generate the complete, working, production-ready code for this landing page as specified. The output should be a full Next.js project structure I can immediately run with npm install && npm run dev.
