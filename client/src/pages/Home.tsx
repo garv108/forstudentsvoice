@@ -80,6 +80,8 @@ export default function Home() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
+      googleId: "",
       institution: "",
     },
   });
@@ -87,7 +89,11 @@ export default function Home() {
   const mutation = useSubmitContact();
 
   const onSubmit = (data: InsertContactInquiry) => {
-    mutation.mutate(data);
+    mutation.mutate(data, {
+      onSuccess: () => {
+        form.reset();
+      }
+    });
   };
 
   const scrollToSection = (id: string) => {
@@ -313,6 +319,34 @@ export default function Home() {
                         </FormItem>
                       )}
                     />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Phone Number</FormLabel>
+                            <FormControl>
+                              <Input placeholder="+1 (555) 000-0000" {...field} className="h-12" />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="googleId"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Google / Gmail ID</FormLabel>
+                            <FormControl>
+                              <Input placeholder="jane.doe@gmail.com" {...field} className="h-12" />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
                     <FormField
                       control={form.control}
                       name="institution"
