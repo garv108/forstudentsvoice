@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { api, type InsertContactInquiry } from "@shared/routes";
+import { type InsertContactInquiry } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 
 // POST /api/contact - Note: Instructions said "onSubmit handler that strictly console.log(data) (NO backend call)"

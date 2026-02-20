@@ -327,7 +327,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel>Phone Number</FormLabel>
                             <FormControl>
-                              <Input placeholder="+1 (555) 000-0000" {...field} className="h-12" />
+                              <Input placeholder="+1 (555) 000-0000" {...field} value={field.value || ""} className="h-12" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -340,7 +340,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel>Google / Gmail ID</FormLabel>
                             <FormControl>
-                              <Input placeholder="jane.doe@gmail.com" {...field} className="h-12" />
+                              <Input placeholder="jane.doe@gmail.com" {...field} value={field.value || ""} className="h-12" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
