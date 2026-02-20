@@ -253,47 +253,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
-      <section className="py-24 bg-white dark:bg-card border-y border-border">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8 flex justify-center text-primary">
-              <MessageSquare className="w-12 h-12 opacity-20" />
-            </div>
-            <blockquote className="text-2xl md:text-4xl font-display font-medium leading-tight text-foreground mb-8">
-              "StudentVoice has completely transformed how we listen to our campus. We identified a critical housing issue weeks before it would have surfaced through traditional channels."
-            </blockquote>
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-                 {/* Placeholder avatar */}
-                 <div className="w-full h-full bg-gradient-to-tr from-blue-400 to-purple-400" />
-              </div>
-              <div className="text-left">
-                <div className="font-bold text-foreground">Dr. Sarah Chen</div>
-                <div className="text-sm text-muted-foreground">Dean of Students, Bayside University</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA / PRICING */}
-      <section id="cta" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-primary/90 -z-20" />
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 -z-10" />
-        
+      <section id="cta" className="py-24 relative overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="text-primary-foreground">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to Foster a Happier Campus?</h2>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Join forward-thinking institutions that prioritize student wellbeing and data-driven improvement. Schedule your personalized demo today.
+            <div className="text-slate-900">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to Transform Student Feedback?</h2>
+              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+                Experience how StudentVoice can help your institution capture real-time insights and improve campus life. Our prototype model is ready for your feedback.
               </p>
               <ul className="space-y-4">
-                {["Unlimited student feedback", "Real-time analytics dashboard", "Priority support", "Custom integration options"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-blue-50">
-                    <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
-                      <CheckCircle2 className="w-4 h-4 text-white" />
+                {[
+                  "Real-time sentiment tracking",
+                  "Secure and intuitive dashboard",
+                  "Automated feedback categorization",
+                  "Direct administrative action tools"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-slate-700">
+                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
                     </div>
                     {item}
                   </li>
@@ -301,7 +279,7 @@ export default function Home() {
               </ul>
             </div>
             
-            <Card className="p-8 shadow-2xl border-0">
+            <Card className="p-8 shadow-2xl border-border/50">
               <CardHeader className="px-0 pt-0">
                 <CardTitle className="text-2xl font-bold">Get a Demo</CardTitle>
                 <CardDescription>Fill out the form and our team will be in touch within 24 hours.</CardDescription>
