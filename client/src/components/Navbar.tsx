@@ -51,9 +51,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 cursor-pointer z-50">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-lg">
-            S
-          </div>
+          <img src="/logo.png" alt="StudentVoice Logo" className="w-8 h-8 rounded-lg" />
           <span className="text-xl md:text-2xl font-display font-bold tracking-tight text-foreground">
             Student<span className="text-primary">Voice</span>
           </span>

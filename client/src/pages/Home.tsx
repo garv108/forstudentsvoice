@@ -403,7 +403,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4 text-white">
-                <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center font-bold">S</div>
+                <img src="/logo.png" alt="StudentVoice Logo" className="w-8 h-8 rounded-lg" />
                 <span className="text-xl font-bold">StudentVoice</span>
               </div>
               <p className="max-w-xs text-slate-400">
