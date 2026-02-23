@@ -76,7 +76,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+        border-color: rgb(226 232 240);
   }
   body {
     @apply bg-background text-foreground antialiased;

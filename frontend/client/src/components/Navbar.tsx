@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -51,9 +51,9 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 cursor-pointer z-50">
-          <img src="/logo.png" alt="StudentVoice Logo" className="w-8 h-8 rounded-lg" />
+          <img src="/logo.png" alt="Student'sVoice Logo" className="w-8 h-8 rounded-lg" />
           <span className="text-xl md:text-2xl font-display font-bold tracking-tight text-foreground">
-            Student<span className="text-primary">Voice</span>
+            Student's<span className="text-primary">Voice</span>
           </span>
         </Link>
 
@@ -67,7 +67,7 @@ export function Navbar() {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="https://students-voice-bay.vercel.app/login" target="_blank" rel="noopener noreferrer">
+          <a href="https://students-voice-bay.vercel.app" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" className="font-semibold text-foreground/80 hover:text-primary hover:bg-primary/5">
               Sign In
             </Button>

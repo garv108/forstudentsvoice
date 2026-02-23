@@ -1,14 +1,14 @@
-import { Navbar } from "@/components/Navbar";
-import { HeroScene, FeatureScene } from "@/components/Scene3D";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Navbar } from "../components/Navbar";
+import { HeroScene, FeatureScene } from "../components/Scene3D";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactInquirySchema, type InsertContactInquiry } from "@shared/schema";
-import { useSubmitContact } from "@/hooks/use-contact";
+import { insertContactInquirySchema, type InsertContactInquiry } from "../../../../backend/shared/schema";
+import { useSubmitContact } from "../hooks/use-contact";
 import { motion } from "framer-motion";
 import { 
   BarChart3, 
@@ -123,11 +123,11 @@ export default function Home() {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-display font-extrabold tracking-tight text-foreground mb-6 leading-tight">
-                Transform Student Feedback into <span className="text-gradient">Actionable Insight</span>
+                Transform Student's Feedback into <span className="text-gradient">Actionable Insight</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                StudentVoice gives your institution a real-time dashboard to understand campus sentiment, address concerns proactively, and build a better student experience.
+                Student'sVoice gives your institution a real-time dashboard to understand campus sentiment, address concerns proactively, and build a better student experience.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="py-24 bg-secondary/30 relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Why StudentVoice?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Why Student'sVoice?</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We bridge the gap between student needs and administrative action with a platform built for modern higher education.
             </p>
@@ -260,13 +260,13 @@ export default function Home() {
       </section>
 
       {/* CTA / PRICING */}
-      <section id="cta" className="py-24 relative overflow-hidden bg-slate-50">
+      <section id="cta" className="py-24 relative overflow-hidden bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="text-slate-900">
               <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to Transform Student Feedback?</h2>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Experience how StudentVoice can help your institution capture real-time insights and improve campus life. Our prototype model is ready for your feedback.
+                Experience how Student'sVoice can help your institution capture real-time insights and improve campus life. Our prototype model is ready for your feedback.
               </p>
               <ul className="space-y-4">
                 {[
@@ -372,7 +372,7 @@ export default function Home() {
                 </Form>
                 <div className="mt-6 text-center text-sm text-muted-foreground">
                   Already have an account?{" "}
-                  <a href="https://students-voice-bay.vercel.app/login" className="text-primary hover:underline font-medium">
+                  <a href="https://students-voice-bay.vercel.app" className="text-primary hover:underline font-medium">
                     Sign In
                   </a>
                 </div>
@@ -396,7 +396,7 @@ export default function Home() {
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-left text-lg">Can we customize the dashboard for our departments?</AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Absolutely. StudentVoice supports unlimited department hierarchies. You can create custom views and permissions for Deans, Department Heads, and Student Affairs staff so they only see relevant data.
+                Absolutely. Student'sVoice supports unlimited department hierarchies. You can create custom views and permissions for Deans, Department Heads, and Student Affairs staff so they only see relevant data.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -416,7 +416,7 @@ export default function Home() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4 text-white">
                 <img src="/logo.png" alt="StudentVoice Logo" className="w-8 h-8 rounded-lg" />
-                <span className="text-xl font-bold">StudentVoice</span>
+                <span className="text-xl font-bold">Student'sVoice</span>
               </div>
               <p className="max-w-xs text-slate-400">
                 Empowering educational institutions to listen, understand, and improve through data-driven student feedback.
@@ -441,7 +441,7 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-            <p>&copy; {new Date().getFullYear()} StudentVoice. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Student'sVoice. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white">Privacy Policy</a>
               <a href="#" className="hover:text-white">Terms of Service</a>
