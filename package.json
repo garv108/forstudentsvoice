@@ -5,7 +5,7 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd backend && npm run dev",
     "dev:client": "cd frontend/client && npm run dev",
-    "build": "cd frontend/client && npm install && npm run build && cd ../../backend && npm install && npm run build"
+    "build": "cd frontend/client && npm install --include=dev && npm run build && cd ../../backend && npm install && npm run build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
