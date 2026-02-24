@@ -1,15 +1,13 @@
 {
   "name": "students-voice",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev:server": "ts-node-dev --respawn --transpile-only backend/server/index.ts",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd backend && npm run dev",
     "dev:client": "cd frontend/client && npm run dev",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+    "build": "cd frontend/client && npm install && npm run build && cd ../../backend && npm install && npm run build"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.6.3"
+    "concurrently": "^8.2.2"
   }
 }

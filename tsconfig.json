@@ -1,23 +1,22 @@
 {
-  "include": ["client/src/**/*", "backend/shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
   "compilerOptions": {
-    "incremental": true,
-    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
-    "noEmit": true,
+    "target": "ES2020",
     "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "backend",
     "strict": true,
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "types": ["node"],
-    "paths": {
-      "@/*": ["./client/src/*"],
-      "@shared/*": ["backend/shared/*"]
-    }
-  }
+    "resolveJsonModule": true
+  },
+  "include": [
+    "backend/server/index.ts",
+    "backend/server/routes.ts",
+    "backend/server/storage.ts",
+    "backend/server/db.ts",
+    "backend/server/static.ts",
+    "backend/shared/**/*"
+  ],
+  "exclude": ["node_modules"]
 }
